@@ -6,6 +6,7 @@ package com.pursuetao.fayelee0.leetcode.array;
  * Given an array nums of integers, return how many of them contain an even number of digits.
  */
 public class FindNumbersWithEvenNumberOfDigits {
+
     public static int findNumbers(int[] nums) {
         int ret = 0;
         for (int num : nums) {
@@ -26,4 +27,5 @@ public class FindNumbersWithEvenNumberOfDigits {
             return false;
         } else return num < 10000;
     }
+
 }

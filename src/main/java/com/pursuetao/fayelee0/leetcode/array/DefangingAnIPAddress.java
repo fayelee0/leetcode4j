@@ -7,6 +7,7 @@ package com.pursuetao.fayelee0.leetcode.array;
  * A defanged IP address replaces every period "." with "[.]".
  */
 public class DefangingAnIPAddress {
+
     public static String defangIPAddr(String address) {
         return address.replaceAll("[.]", "[.]");
     }
@@ -41,4 +42,5 @@ public class DefangingAnIPAddress {
 
         return buffer.toString();
     }
+
 }
