@@ -1,0 +1,14 @@
+package com.pursuetao.fayelee0.leetcode.array;
+
+import org.junit.Test;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
+public class TestCode136 {
+    @Test
+    public void singleNumber() {
+        assertThat(Code136.singleNumber0(new int[]{2, 2, 1}), is(1));
+        assertThat(Code136.singleNumber0(new int[]{4, 1, 2, 1, 2}), is(4));
+    }
+}
