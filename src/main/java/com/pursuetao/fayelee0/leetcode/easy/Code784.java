@@ -3,7 +3,7 @@ package com.pursuetao.fayelee0.leetcode.easy;
 import java.util.*;
 
 /**
- * <a href="https://leetcode.com/problems/letter-case-permutation/">LeetCode 784 Letter Case Permutation (Easy)</a>
+ * <a href="https://leetcode.com/problems/letter-case-permutation/">784. Letter Case Permutation (Easy)</a>
  * <p>
  * Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
  * <p>
@@ -22,7 +22,7 @@ import java.util.*;
  * S will be a string with length between 1 and 12.
  * S will consist only of letters or digits.
  */
-public class LetterCasePermutation {
+public class Code784 {
     public static List<String> letterCasePermutation(String S) {
         Queue<char[]> queue = new LinkedList<>();
         initQueue(queue, S.charAt(S.length() - 1), S.length());

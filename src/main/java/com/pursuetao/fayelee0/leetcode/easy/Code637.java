@@ -1,5 +1,7 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
+import com.pursuetao.fayelee0.leetcode.util.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

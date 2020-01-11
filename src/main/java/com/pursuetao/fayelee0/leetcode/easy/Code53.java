@@ -1,12 +1,12 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
 /**
- * <a href="https://leetcode.com/problems/maximum-subarray/">LeetCode 53 Easy</a>
+ * <a href="https://leetcode.com/problems/maximum-subarray/">53. Maximum subarray (Easy)</a>
  *
  * Given an integer array nums, find the contiguous subarray (containing at least one number)
  * which has the largest sum and return its sum.
  */
-public class MaximumSubarray {
+public class Code53 {
 
     // If you have figured out the O(n) solution,
     // try coding another solution using the divide and conquer approach,

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * <a href="https://leetcode.com/problems/fizz-buzz/">LeetCode 412 Fizz Buzz (Easy)</a>
+ * <a href="https://leetcode.com/problems/fizz-buzz/">412. Fizz Buzz (Easy)</a>
  *
  * Write a program that outputs the string representation of numbers from 1 to n.
  *
@@ -34,7 +34,7 @@ import java.util.List;
  *     "FizzBuzz"
  * ]
  */
-public class FizzBuzz {
+public class Code412 {
     public static List<String> fizzBuzz(int n) {
         List<String> ret = new ArrayList<>(n);
         for (int i = 1; i <= n; i++) {

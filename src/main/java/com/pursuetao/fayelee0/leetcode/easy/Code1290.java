@@ -1,7 +1,9 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
+import com.pursuetao.fayelee0.leetcode.util.ListNode;
+
 /**
- * <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/">LeetCode 1290 Convert Binary Number in a Linked List to Integer (Easy)</a>
+ * <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/">1290. Convert Binary Number in a Linked List to Integer (Easy)</a>
  *
  * Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.
  *
@@ -41,7 +43,7 @@ package com.pursuetao.fayelee0.leetcode.easy;
  *     Number of nodes will not exceed 30.
  *     Each node's value is either 0 or 1.
  */
-public class ConvertBinaryNumberInALinkedListToInteger {
+public class Code1290 {
     public static int getDecimalValue(ListNode head) {
         int ret = 0;
 

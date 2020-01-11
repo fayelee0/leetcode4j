@@ -1,5 +1,6 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
+import com.pursuetao.fayelee0.leetcode.util.TreeNode;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

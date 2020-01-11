@@ -1,12 +1,12 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
 /**
- * <a href="https://leetcode.com/problems/defanging-an-ip-address/">LeetCode 1108 Easy</a>
+ * <a href="https://leetcode.com/problems/defanging-an-ip-address/">1108. Defanging an IP address (Easy)</a>
  *
  * Given a valid (IPv4) IP address, return a defanged version of that IP address.
  * A defanged IP address replaces every period "." with "[.]".
  */
-public class DefangingAnIPAddress {
+public class Code1108 {
 
     public static String defangIPAddr(String address) {
         return address.replaceAll("[.]", "[.]");

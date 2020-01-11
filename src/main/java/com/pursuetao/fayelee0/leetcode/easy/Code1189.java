@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <a href="https://leetcode.com/problems/maximum-number-of-balloons/">LeetCode 1189 Maximum Number of Balloons (Easy)</a>
+ * <a href="https://leetcode.com/problems/maximum-number-of-balloons/">1189. Maximum Number of Balloons (Easy)</a>
  * <p>
  * Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
  * <p>
@@ -34,7 +34,7 @@ import java.util.Map;
  * 1 <= text.length <= 10^4
  * text consists of lower case English letters only.
  */
-public class MaximumNumberOfBalloons {
+public class Code1189 {
     public static int maxNumberOfBalloons(String text) {
         Map<Character, Integer> store = new HashMap<>();
         store.put('b', 0);

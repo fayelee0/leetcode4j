@@ -1,7 +1,7 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
 /**
- * <a href="https://leetcode.com/problems/to-lower-case/">LeetCode 709 To Lower Case (Easy)</a>
+ * <a href="https://leetcode.com/problems/to-lower-case/">709. To Lower Case (Easy)</a>
  *
  * Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
  *
@@ -23,7 +23,7 @@ package com.pursuetao.fayelee0.leetcode.easy;
  * Output: "lovely"
  *
  */
-public class ToLowerCase {
+public class Code709 {
     public static String toLowerCase(String str) {
         return str.toLowerCase();
     }

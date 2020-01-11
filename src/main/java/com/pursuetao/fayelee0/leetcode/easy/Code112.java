@@ -1,5 +1,7 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
+import com.pursuetao.fayelee0.leetcode.util.TreeNode;
+
 /**
  * <a href="https://leetcode.com/problems/path-sum/">LeetCode 112. Path Sum (Easy)</a>
  *

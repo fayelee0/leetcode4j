@@ -1,12 +1,12 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
-import com.pursuetao.fayelee0.leetcode.easy.TreeNode;
+import com.pursuetao.fayelee0.leetcode.util.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * <a href="https://leetcode.com/problems/invert-binary-tree/submissions/">LeetCode 226 Invert Binary Tree (Easy)</a>
+ * <a href="https://leetcode.com/problems/invert-binary-tree/submissions/">226. Invert Binary Tree (Easy)</a>
  *
  * Invert a binary tree.
  *
@@ -33,7 +33,7 @@ import java.util.Queue;
  *
  *     Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so f*** off.
  */
-public class InvertBinaryTree {
+public class Code226 {
     public static TreeNode invertTree(TreeNode root) {
         invert(root);
         return root;

@@ -1,11 +1,11 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
 /**
- * <a href="https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/">LeetCode 1281 Easy</a>
+ * <a href="https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/">1281. Subtract the Product and Sum of Digits of an Integer (Easy)</a>
  * <p>
  * Given an integer number n, return the difference between the product of its digits and the sum of its digits.
  */
-public class SubtractTheProductAndSumOfDigitsOfAnInteger {
+public class Code1281 {
 
     // 1 <= n <= 10^5
     public static int subtractProductAndSum(int n) {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <a href="https://leetcode.com/problems/jewels-and-stones">LeetCode 771 Jewels and Stones (Easy)</a>
+ * <a href="https://leetcode.com/problems/jewels-and-stones">771. Jewels and Stones (Easy)</a>
  *
  * You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
  *
@@ -24,7 +24,7 @@ import java.util.Map;
  *     S and J will consist of letters and have length at most 50.
  *     The characters in J are distinct.
  */
-public class JewelsAndStones {
+public class Code771 {
     public static int numJewelsInStones(String J, String S) {
         Map<Character, Boolean> store = new HashMap<>();
         for (int i = 0; i < J.length(); i++) {
