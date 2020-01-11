@@ -71,4 +71,24 @@ public class Code136 {
         }
         return nums[nums.length - 1];
     }
+
+    // Strategy:
+    // 1. x^x = 0
+    // 2. loop array, every number compute xor
+    // 3. return result
+    //
+    // Measure:
+    // Time     loop-array O(n)
+    // Space    O(1)
+    //
+    // Compute:
+    // Runtime: 0ms~100%
+    // Memory Usage: 39.7ms~96.30%
+    public static int singleNumber2(int[] nums) {
+        int ret = 0;
+        for (int n : nums) {
+            ret ^= n;
+        }
+        return ret;
+    }
 }

@@ -17,4 +17,16 @@ public class TestCode136 {
         assertThat(Code136.singleNumber1(new int[]{2, 2, 1}), is(1));
         assertThat(Code136.singleNumber1(new int[]{4, 1, 2, 1, 2}), is(4));
     }
+
+    @Test
+    public void singleNumber2() {
+        assertThat(Code136.singleNumber2(new int[]{2, 2, 1}), is(1));
+        assertThat(Code136.singleNumber2(new int[]{4, 1, 2, 1, 2}), is(4));
+    }
+
+    @Test
+    public void singleNumber3() {
+        assertThat(Code136.singleNumber3(new int[]{2, 2, 1}), is(1));
+        assertThat(Code136.singleNumber3(new int[]{4, 1, 2, 1, 2}), is(4));
+    }
 }
