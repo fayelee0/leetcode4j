@@ -1,7 +1,5 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
-import com.pursuetao.fayelee0.leetcode.easy.AverageOfLevelsInBinaryTree;
-import com.pursuetao.fayelee0.leetcode.easy.TreeNode;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -9,7 +7,7 @@ import java.util.Arrays;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TestAverageOfLevelsInBinaryTree {
+public class TestCode637 {
     @Test
     public void averageOfLevels() {
         TreeNode node = new TreeNode(3,
@@ -17,7 +15,7 @@ public class TestAverageOfLevelsInBinaryTree {
                 new TreeNode(20,
                         new TreeNode(15),
                         new TreeNode(7)));
-        assertThat(AverageOfLevelsInBinaryTree.averageOfLevels(node), is(Arrays.asList(3.0, 14.5, 11.0)));
+        assertThat(Code637.averageOfLevels(node), is(Arrays.asList(3.0, 14.5, 11.0)));
     }
 
     @Test
@@ -27,6 +25,6 @@ public class TestAverageOfLevelsInBinaryTree {
                 new TreeNode(20,
                         new TreeNode(15),
                         new TreeNode(7)));
-        assertThat(AverageOfLevelsInBinaryTree.averageOfLevels2(node), is(Arrays.asList(3.0, 14.5, 11.0)));
+        assertThat(Code637.averageOfLevels2(node), is(Arrays.asList(3.0, 14.5, 11.0)));
     }
 }

@@ -1,11 +1,12 @@
 package com.pursuetao.fayelee0.leetcode.easy;
 
-import com.pursuetao.fayelee0.leetcode.easy.TreeNode;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
- * <a href="https://leetcode.com/problems/average-of-levels-in-binary-tree/">LeetCode 637 Average of Levels in Binary Tree (Easy)</a>
+ * <a href="https://leetcode.com/problems/average-of-levels-in-binary-tree/">637. Average of Levels in Binary Tree (Easy)</a>
  *
  * Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
  *
@@ -25,7 +26,7 @@ import java.util.*;
  *
  *     The range of node's value is in the range of 32-bit signed integer.
  */
-public class AverageOfLevelsInBinaryTree {
+public class Code637 {
     public static List<Double> averageOfLevels(TreeNode root) {
         List<Double> ret = new ArrayList<>();
 
