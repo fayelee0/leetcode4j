@@ -1,5 +1,6 @@
 package com.pursuetao.fayelee0.leetcode.array;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,14 +24,17 @@ import java.util.Set;
  * Output: 4
  */
 public class Code136 {
+    // 策略：
     // 1. 遍历数组，并创建一个集合保存中间结果
     // 2. 若当前值不在集合中，则将其添加到集合
     // 3. 若当前值已在集合中，则将其移除出集合
     // 4. 集合中唯一剩余的数为结果
     //
-    // 时间复杂度：数组遍历 O(n) + 集合查找 O(1) = O(n)
+    // 度量：
+    // 时间复杂度：数组遍历 O(n) + 集合查找 O(n) = O(n)
     // 空间复杂度：集合存储 O(n)
     //
+    // 计算：
     // Runtime: 7ms~38.96%
     // Memory Usage: 40.6MB~78.52%
     public static int singleNumber0(int[] nums) {
@@ -45,5 +49,26 @@ public class Code136 {
         Integer[] ret = new Integer[once.size()];
         once.toArray(ret);
         return ret[0];
+    }
+
+    // 策略：
+    // 1. 对数组排序
+    // 2. 遍历数组
+    //
+    // 度量：
+    // 时间复杂度：数组排序 O(n·lgn) + 数组遍历 O(n)
+    // 空间复杂度：O(1)
+    //
+    // 计算：
+    // Runtime: 3ms~49.69%
+    // Memory Usage: 40.6MB~96.30%
+    public static int singleNumber1(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 1; i += 2) {
+            if (nums[i] != nums[i + 1]) {
+                return nums[i];
+            }
+        }
+        return nums[nums.length - 1];
     }
 }
