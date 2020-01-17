@@ -7,6 +7,9 @@ import java.util.Set;
 // https://leetcode.com/problems/unique-morse-code-words/
 public class Code804 {
     public static int uniqueMorseRepresentations(String[] words) {
+        if (words.length < 2) {
+            return words.length;
+        }
         String[] mapping = new String[]{".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
         Set<String> set = new HashSet<>();
         StringBuilder sb;
