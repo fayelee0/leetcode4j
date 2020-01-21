@@ -18,7 +18,7 @@ public class TestCode226 {
                         new TreeNode(6),
                         new TreeNode(9)));      // 4 2 1 3 7 6 9
 
-        assertThat(Code226.invertTree(node).toString(), is("4 7 9 6 2 3 1"));
+        assertThat(Code226.invertTree(node).toString(), is("4 7 9 - - 6 - - 2 3 - - 1 - -"));
     }
 
     @Test
@@ -31,7 +31,7 @@ public class TestCode226 {
                         new TreeNode(6),
                         new TreeNode(9)));      // 4 2 1 3 7 6 9
 
-        assertThat(Code226.invertTree2(node).toString(), is("4 7 9 6 2 3 1"));
+        assertThat(Code226.invertTree2(node).toString(), is("4 7 9 - - 6 - - 2 3 - - 1 - -"));
 
         assertThat(Code226.invertTree2(null), is(nullValue()));
     }
