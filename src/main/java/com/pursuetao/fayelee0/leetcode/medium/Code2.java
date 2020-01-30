@@ -96,23 +96,20 @@ public class Code2 {
             return (carry == 0) ? null : new ListNode(carry);
         }
 
-        if (l1 == null) {
-            int s = l2.val + carry;
-            ListNode ret = new ListNode(s % 10);
-            ret.next = addTwoNumbers33(null, l2.next, s / 10);
-            return ret;
+        int s = carry;
+        if (l1 != null) {
+            s += l1.val;
+            l1 = l1.next;
         }
 
-        if (l2 == null) {
-            int s = l1.val + carry;
-            ListNode ret = new ListNode(s % 10);
-            ret.next = addTwoNumbers33(l1.next, null, s / 10);
-            return ret;
+        if (l2 != null) {
+            s += l2.val;
+            l2 = l2.next;
         }
 
-        int s = l1.val + l2.val + carry;
+        carry = s / 10;
         ListNode ret = new ListNode(s % 10);
-        ret.next = addTwoNumbers33(l1.next, l2.next, s / 10);
+        ret.next = addTwoNumbers33(l1, l2, carry);
         return ret;
     }
 }
