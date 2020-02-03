@@ -21,12 +21,16 @@ public class TreeNode {
         sb.append(this.val).append(" ");
         if (this.left != null) {
             sb.append(this.left);
-            sb.append(" ");
+        } else {
+            sb.append("-");
         }
+        sb.append(" ");
         if (this.right != null) {
             sb.append(this.right);
-            sb.append(" ");
+        } else {
+            sb.append("-");
         }
+        sb.append(" ");
         return sb.delete(sb.length() - 1, sb.length()).toString();
     }
 }
