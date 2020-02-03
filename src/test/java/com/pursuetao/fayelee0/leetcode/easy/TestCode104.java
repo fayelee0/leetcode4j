@@ -16,4 +16,14 @@ public class TestCode104 {
                         new TreeNode(7)));
         assertThat(Code104.maxDepth(tree), is(3));
     }
+
+    @Test
+    public void maxDepth2() {
+        TreeNode tree = new TreeNode(3,
+                new TreeNode(9),
+                new TreeNode(20,
+                        new TreeNode(15),
+                        new TreeNode(7)));
+        assertThat(Code104.maxDepth2(tree), is(3));
+    }
 }
